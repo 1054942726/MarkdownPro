@@ -401,7 +401,6 @@ export default {
       if (editor != null) {
         const selection = editor.getSelection();
         if (selection) {
-          console.log(typeof (titles[level] + selection + "\n"));
           this.insertContent(titles[level] + selection + "\n");
           this.setCursor(line, titles[level].length + selection.length);
         } else {

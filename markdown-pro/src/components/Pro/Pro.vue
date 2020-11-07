@@ -140,7 +140,6 @@ export default {
     },
     getData() {
       axios.get(`/ReadMe.json`).then(res => {
-        console.log(1);
         this.mStr = res.data.data;
         this.textTitle = res.data.title;
       });
